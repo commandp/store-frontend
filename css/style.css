@@ -1,4 +1,19 @@
-
+.pulling{
+    height: 420px;
+    background-color: rgb(69, 80, 84);
+    color: rgba(255,255, 255, 0.50);
+    text-align: center;
+    margin: 0 auto;
+}
+.pull-img {
+    width: 24px;
+    height: 24px;
+    margin: 25px 0 8px 0;
+}
+.pull-text {
+    font-size: 13px;
+    line-height: 18px;
+}
 .product-detail {
     background-color: #f1f1f1;
 }
@@ -38,6 +53,22 @@
     line-height: 26px;
     font-size: 16px;
 }
+.icon-img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: sub;
+}
+.icon-contain {
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    background-color: #fff;
+    display: inline-block;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    margin-right: 10px;
+}
 .go-buy {
     background-color: rgb(240, 88, 48);
     color: #fff;
@@ -49,6 +80,8 @@
     width: 100%;
     height: 50px;
     z-index: 100;
+    line-height: 50px;
+    text-align: center;
 }
 .mui-segmented-control.mui-segmented-control-inverted ~ .desc-line.mui-slider-progress-bar{
     background-color: rgb(79, 189, 146);
@@ -204,6 +237,10 @@
     margin-bottom: 10px;
     border-color: rgb(81, 104, 128);
 }
+.edit-dialog-cont .cont .btn-icon {
+    padding: 3px 15px 3px 3px;
+}
+
 .edit-dialog-cont .cont .btn-chek.active {
     background-color: rgb(79, 189, 146);
     color: #fff;
