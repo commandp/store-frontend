@@ -10,11 +10,13 @@ mui.init({
   }
 });
 
-// 加入购物车弹层
-mui('body').on('tap', '#btn-buy', function () {
-    document.querySelector('#edit-dialog').style.display = 'block';
-}).on('tap', '#edit-dialog .btn-close', function () {
-    document.querySelector('#edit-dialog').style.display = 'none';
+// 菜单
+mui('body').on('tap', '.mui-icon-item, #menu-list', function () {
+    if (document.body.classList.contains('menu-show')) {
+        document.body.classList.remove('menu-show');
+    } else {
+        document.body.classList.add('menu-show');
+    }
 });
 
 // 下拉显示LOGO
@@ -48,5 +50,38 @@ mui('.list-2').on('tap', 'a', function () {
     location.href = 'product_regular.html';
 });
 
+// 加入购物车弹层
+mui('body').on('tap', '#btn-buy', function () {
+    document.querySelector('#edit-dialog').style.display = 'block';
+}).on('tap', '#edit-dialog .btn-close', function () {
+    document.querySelector('#edit-dialog').style.display = 'none';
+});
+
 // 客户编辑
-mui('')
+mui('#edit-dialog').on('change', 'input[type=radio]', function () {
+    var size = document.querySelector('input[name=size]:checked').value;
+    var style = document.querySelector('input[name=style]:checked').value;
+    console.log(size, style);
+    // 更新slider
+    var slider = mui('#edit-dialog-slider')[0];
+    mui('#edit-dialog-slider').slider().destroy();
+    slider.innerHTML = '<div class="mui-slider-group mui-slider-loop">\
+                <div class="mui-slider-item mui-slider-item-duplicate">\
+                    <a href="#"><img src="./img/banner.png"></a>\
+                </div>\
+                <div class="mui-slider-item">\
+                    <a href="#"><img src="./img/banner.png"></a>\
+                </div>\
+                <div class="mui-slider-item">\
+                    <a href="#"><img src="./img/banner.png"></a>\
+                </div>\
+                <div class="mui-slider-item mui-slider-item-duplicate">\
+                    <a href="#"><img src="./img/banner.png"></a>\
+                </div>\
+            </div>\
+            <div class="mui-slider-indicator">\
+                <div class="mui-indicator mui-active"></div>\
+                <div class="mui-indicator"></div>\
+            </div>';
+    mui('#edit-dialog-slider').slider();
+})

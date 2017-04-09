@@ -157,6 +157,15 @@
         </div>
     </div>
 
+    <!-- 导航菜单 -->
+    <div id="menu-list" class="menu-list max-width">
+        <div class="mui-table-view">
+            <a class="mui-table-view-cell menu-home">首頁</a>
+            <a class="mui-table-view-cell menu-search">訂單查詢</a>
+            <a class="mui-table-view-cell menu-contact">聯絡客服</a>
+        </div>
+        <div class="backdrop max-width"></div>
+    </div>
 
     <!-- 编辑对话框 -->
     <div id="edit-dialog" style="display: none;" class="edit-dialog max-width">
@@ -203,21 +212,39 @@
         <div class="edit-dialog-cont">
             <div class="tit">尺寸</div>
             <div class="cont">
-                <button type="button" class="mui-btn btn-chek active">iPhone 6</button>
-                <button type="button" class="mui-btn btn-chek">iPhone 6 Plus</button>
-                <button type="button" class="mui-btn btn-chek">iPhone 7</button>
-                <button type="button" class="mui-btn btn-chek">iPhone7 Plus</button>
-                <button type="button" class="mui-btn btn-chek">Samsung Note 5</button>
+                <div class="mui-radio">
+                    <input type="radio" name="size" value="iPhone 6" checked>
+                    <label class="mui-btn btn-chek active">iPhone 6</label>
+                </div>
+                <div class="mui-radio">
+                    <input type="radio" name="size" value="iPhone 6 Plus">
+                    <label class="mui-btn btn-chek">iPhone 6 Plus</label>
+                </div>
+                <div class="mui-radio">
+                    <input type="radio" name="size" value="iPhone 7">
+                    <label class="mui-btn btn-chek">iPhone 7</label>
+                </div>
+                <div class="mui-radio">
+                    <input type="radio" name="size" value="iPhone7 Plus">
+                    <label class="mui-btn btn-chek">iPhone7 Plus</label>
+                </div>
+                <div class="mui-radio">
+                    <input type="radio" name="size" value="Samsung Note 5">
+                    <label class="mui-btn btn-chek">Samsung Note 5</label>
+                </div>
             </div>
         </div>
         <div class="edit-dialog-cont">
             <div class="tit">款式</div>
             <div class="cont">
-                <button type="button" class="mui-btn btn-chek">設計師款</button>
-                <button type="button" class="mui-btn btn-chek btn-icon active">
-		            <span class="icon-contain"><img class="icon-img" src="./img/icon.png" alt=""></span>
-		            訂製款	
-		        </button>
+                <div class="mui-radio">
+                    <input type="radio" name="style" value="設計師款" checked>
+                    <label class="mui-btn btn-chek">設計師款</label>
+                </div>
+                <div class="mui-radio">
+                    <input type="radio" name="style" value="訂製款">
+                    <label class="mui-btn btn-chek btn-icon"><span class="icon-contain"><img class="icon-img" src="./img/icon.png" alt=""></span>訂製款</label>
+                </div>
             </div>
         </div>
         <div class="edit-dialog-cont">
@@ -225,7 +252,7 @@
             <div class="cont">
                 <div class="mui-numbox" data-numbox-step='1' data-numbox-min='0'>
                     <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
-                    <input class="mui-numbox-input" type="number" />
+                    <input class="mui-numbox-input" type="number">
                     <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
                 </div>
             </div>

@@ -7,16 +7,62 @@ body {
     max-width: 414px;
     margin: 0 auto;
 }
-.mui-slider-indicator .mui-indicator{
-    background-color: rgb(79, 189, 146);
+.mui-slider-indicator .mui-indicator {
     box-shadow: none;
     width: 10px;
     height: 10px;
+    background-color: #fff;
 }
-.mui-slider-indicator .mui-active{
+.mui-slider-indicator .mui-indicator.mui-active{
     box-shadow: none;
+    background-color: rgb(79, 189, 146);
 }
 
+/* menu-list */
+.menu-list {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50px;
+    z-index: 99;
+    display: none;
+}
+.menu-list .mui-table-view {
+    z-index: 1;
+}
+.menu-list .mui-table-view-cell {
+    display: list-item;
+    color: inherit;
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
+    background-size: 18px;
+    padding-left: 40px;
+    line-height: 28px;
+}
+.menu-list .mui-table-view-cell:after {
+    left: 0;
+}
+.menu-list .backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+.menu-home {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW%2BjAAAAAXNSR0IArs4c6QAAAVdJREFUOBHllb1Kw1AYhlN%2FsIOgIAgibqKj4uQgXoF34ObqLejWm3DRLoKbaxdB0MnJxUEcREUsDv4MiqCoz1NyIKlp2oZsvvDknPN97%2Fe2JKGtRN1VwbIV22qsP91HOjsGadXBENkDa4U0wtQhGLQd496avb40ivsIvmEzMenemj09PWkC1xl8wnrGhDV7evTmapruBbzDWo7Tnh69zmRqluo1vMJqpiNd1KPXGWdTWuDUhEdYSnXyD3qdcdaMlpa5PsMNzLcq%2FV2cuQUzzIoacA8zHgrKWTMaA1yqcAV3UFTOmlE1sFSVHjiU8%2FXG6EmWfF3kjzoFjuN8AO9vlj4oTsFLezMv0LBdOG0bWuG8AX5oz4Eh44RNPRzi1V8cAzNV%2BkP5h4HhKS9yh48Td7nT65KwRAccfH2CzDj3D2cYJkM1Xr9YL2EHnuJaWN7YzIVDYm2y3%2F8FphU%2FuEHLDUsAAAAASUVORK5CYII%3D);
+}
+.menu-search {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAYAAAAP6L%2BeAAAAAXNSR0IArs4c6QAAAa1JREFUOBGtlU0oRFEYhg0iWUhk4SdjYSG2tgplZSNLGzt%2FpSwlsbCQNVZsSEKTv0JZikYplhbEwt9IipLy%2F7zNPZNmzty5M923njnnvt93vvnm3nPPBLLsKsBug1aogny4hzBswwOkpQDZAxCBX3iBMziGO5D3AdNQDJ5USNYmaPE%2BtEAu%2FFcdFyqq4hega1dlE92CT%2BhzzYwGGxlu4QbKo5b9cxBbnfbYw1a3HvcV9qxRTN2CJ7eEZAvxTUPNtpxOTHXbZAum8PKIP8O8LW%2FGCeo%2BZ6JlFl3FL1SxSriGH8hElyyqAG3VmFQ4B75jTvoTNaSiCYW1bYLxAa69Kkii3sSEX9yFqYenvZmu9IsjsGRbWISp%2FbhqC6bwuomrqfZkeaNOgraeV1WT%2BAhHbgu0Hw%2FgDTrcEp1YLeM5aA9r7qpSooegh7AAtgOmBH8EdOqJWfAkdT4B6lz3TifYLmzACXyB%2FBBMOfNJRs8qI7MX1iAMp7ADY9AARnpr9UXjxvBr1EsxByo%2B7FdRU0d7eRFUfMiYfo06FlZAxfv9Kmrq6G9sHd5Bc1%2BlzmtU8Q%2B35lepl%2F9utwAAAABJRU5ErkJggg%3D%3D);
+}
+.menu-contact {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAAAXNSR0IArs4c6QAAAOFJREFUOBHtlDELQVEYhs%2FFIsVNVrPNoGQxKJN%2FY7Fh8Ats%2FgY%2FQBmkpMhG%2BQMWyWLD89Yd5B515dztvvV0v977nffU1%2BnzjDElqMIDXClF0F5hM3jGwDRDaAF0SxdcaUyQr3DpCgsVjqQ8o9nEpiTcOtpkLMlYrBOwmrG%2BFu0WrdoitCCKbjRtvzTW8PPgw0U9A%2Fh15fZ08EPy3nP6HoZGU4csRNGIpga0YRkcaPKdwxqGcIcN%2FCzt%2FyOcoRyg%2BgD697cqJGhn7wJUy3OmDkl6DEJ1SOmQE9040ZqDFUxsx17kmES0Z9i03gAAAABJRU5ErkJggg%3D%3D);
+}
+.menu-show .menu-list {
+    display: block;
+}
+
+/* provdied */
 .provdied {
     height: 100%;
     background-color: rgb(69, 80, 84);
@@ -25,7 +71,6 @@ body {
     margin: 0 auto;
     position: fixed;
     width: 100%;
-    left: 0;
     top: 0;
 }
 .provdied-img {
@@ -44,6 +89,8 @@ body {
     z-index: 1;
     background-color: #fff;
 }
+
+/* detail */
 .product-detail {
     background-color: #f1f1f1;
 }
@@ -300,12 +347,11 @@ body {
     line-height: 44px;
 }
 .edit-dialog-cont .cont {
-    margin-left: 42px;
+    margin-left: 38px;
 }
 .edit-dialog-cont .cont .btn-chek {
     padding: 10px 15px;
     font-size: 16px;
-    margin-right: 10px;
     margin-bottom: 10px;
     border-color: rgb(81, 104, 128);
     color: rgb(81, 104, 128);
@@ -315,7 +361,16 @@ body {
     padding: 2px 15px 2px 3px;
 }
 
-.edit-dialog-cont .cont .btn-chek.active {
+/*.edit-dialog-cont .cont .btn-chek.active {
+    background-color: rgb(79, 189, 146);
+    color: #fff;
+    border-color: rgb(79, 189, 146);
+}*/
+.edit-dialog-cont .mui-radio {
+    display: inline-block;
+    margin: 0 5px;
+}
+.edit-dialog-cont .mui-radio input[type=radio]:checked + .btn-chek {
     background-color: rgb(79, 189, 146);
     color: #fff;
     border-color: rgb(79, 189, 146);
