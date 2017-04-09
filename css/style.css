@@ -1,13 +1,23 @@
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(69, 80, 84);
+}
+.max-width {
+    max-width: 414px;
+    margin: 0 auto;
+}
 .mui-slider-indicator .mui-indicator{
     background-color: rgb(79, 189, 146);
-    box-shadow: 0 0 1px 1px rgb(79, 189, 146);
+    box-shadow: none;
+    width: 10px;
+    height: 10px;
 }
 .mui-slider-indicator .mui-active{
-    box-shadow: 0 0 1px 1px rgba(130, 130, 130, .7);
+    box-shadow: none;
 }
 
-}
-.pulling{
+.provdied {
     height: 100%;
     background-color: rgb(69, 80, 84);
     color: rgba(255,255, 255, 0.50);
@@ -18,20 +28,21 @@
     left: 0;
     top: 0;
 }
+.provdied-img {
+    width: 24px;
+    height: 24px;
+    margin: 25px 0 8px 0;
+}
+.provdied-text {
+    font-size: 13px;
+    line-height: 18px;
+}
+
 #wrapper {
     height: 100%;
     position: relative;
     z-index: 1;
     background-color: #fff;
-}
-.pull-img {
-    width: 24px;
-    height: 24px;
-    margin: 25px 0 8px 0;
-}
-.pull-text {
-    font-size: 13px;
-    line-height: 18px;
 }
 .product-detail {
     background-color: #f1f1f1;
@@ -40,14 +51,15 @@
      text-align: center;
      background-color: #fff;
      width: 100%;
+     color: rgb(69, 80, 84);
 }
 .product-detail .desc {
     font-size: 17px;
-    padding: 14px 0;
+    line-height: 50px;
 }
 .product-detail .price {
     font-size: 20px;
-    padding: 14px 0;
+    line-height: 50px;
     border-top: 1px solid #e6e6e6;
     color: rgb(240, 88, 48)
 }
@@ -55,21 +67,20 @@
 .product-detail .desc-info {
     background-color: #fff;
     width: 100%;
-    /*height: 700px;*/
     font-size: 16px;
     color: rgb(81, 104, 128);
     margin-top: 10px;
 }
-.product-detail .mui-slider-progress-bar {
-    -webkit-transform: translateY(1px);
-}
 
 .mui-slider-item.mui-control-content.item-desc-1 {
     height: 500px;
+    border-bottom: none !important;
+    margin-top: -1px;
 }
 
 .mui-control-item.desc-info-title{
-    line-height: 46px;
+    line-height: 48px;
+    font-size: 16px;
 }
 .mui-scroll.desc-contain {
     padding: 15px;
@@ -91,7 +102,7 @@
     border-bottom-left-radius:3px;
     margin-right: 10px;
 }
-.go-buy {
+.btn-buy {
     background-color: rgb(240, 88, 48);
     color: #fff;
     font-size: 18px;
@@ -105,6 +116,24 @@
     line-height: 50px;
     text-align: center;
 }
+.btn-edit {
+    color: rgb(240, 88, 48);
+    background-color: #fff;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    z-index: 2;
+    line-height: 50px;
+    text-align: center;
+}
+
 .mui-segmented-control.mui-segmented-control-inverted ~ .desc-line.mui-slider-progress-bar{
     background-color: rgb(79, 189, 146);
 }
@@ -118,10 +147,14 @@
     padding-top: 10px;
 }
 .may-like {
-     margin-bottom: 70px;
+     margin-bottom: 60px;
 }
-.like-text{
+.may-like .like-text{
     margin: 15px 0 10px 15px;
+    font-size: 18px;
+}
+.may-like .mui-table-view:before {
+    background-color: transparent;
 }
 
 .mui-bar {
@@ -140,7 +173,23 @@
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAASCAYAAACw50UTAAAAAXNSR0IArs4c6QAAACxJREFUOBFjZGBg+A/ENAFMNDF11NDRECA5BBiBOkbTOcnBNqphiIXA0E3nAPTKAwfUKYGPAAAAAElFTkSuQmCC);
 }
 .mui-bar .mui-icon-cart {
+    position: relative;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA0CAYAAADfRPtlAAAAAXNSR0IArs4c6QAABHpJREFUaAXtWluITlEUNpghw8gtjOQ2uYdcZwwpSaHkhRcpDx6kkAdv8iBSUh48IA%2BTF5TiiTRkBrklEyFmXAYxLpkx7mZG%2BL7f2Vr%2FmnPm3%2Bfy%2F%2F%2F5Nau%2B2Wvts9baa5299j77nH%2Fyuvyl3mhKgDxH1k0zOup1Z67IwxFoE%2FA7BY7mSkI6zg0pEpOJz9TGcZe7IsAbPoJc6EM3Fqpmzc1DNJwdI8vgdkLo5XScRbtEXvwf%2BEokYcr0C%2Fj8XEqKJZqKqoRCIfhZQo4961aSOuhSdFwTnefB3xZy3NhWBHQFOGMbWHcofgJMmeZKu802QeqdzsEEGxm4zRqknlyHlHOBEsuP5WdDOsF7MFpkY5hBHSZUB%2FRxxqzxMzZn%2BgNg1l8beO6ocaJJCMbEx3YHg7Mt0V%2FQvUQDhzjzs40Qk3auioM7qXWC1NVlqh1SJ5sk4%2BGEXPcbzFQYyBKwfs74HSigPtefie9uEB9cxO%2BFE75i2RwUgozl12agiItJHjQObNcg9WlYTcahfmgnGCHLrSxPhnLVxOMnQdpUGUOnLVdytkQdx78E%2FQY0EQamztlW%2BHWQJv3LIq63Ycd4I5zVhnUWgX0BfHwXMZ2SPv2WKG2rhYOx4LnAs0nTMXhPEUBSeQZJUK9DvcDFWBlh9fiJB7wZOYoEFxhnWWplgq2I4VYUcXAhc5MhfB1qoxhc%2BWhw4mAsSeVJvSAzSDvpiCccPhOzQaMw6FAxsIwr0R1FgvSRrTKV5cmEktYfO2zfB6krSd%2BpNfJiBvlVaiwdl7psL%2FaAagtg1mEc2idu4QctUSYXt7eJpAe8W7J%2B%2B%2FijzQMgDrPHo1qRWwJhX3fy4ZTfTQe5Oc9AH2%2FuK%2BAmQL6TOu9Art2BsGvQ5MufwJcBZcBgIOjzFaYpiefNBuAiUAlQTiuth3f5rSaTu%2BozjL0indnx404mE%2FIaa2s6ktzikRy%2FSboFwn6%2BedvCzQf73PyzbzkQGfEtXv%2Bkdhx9U4ACgN9uDgMySJ5%2BuD5taAaUpO1PyLuA0QCPiXOAC4DUeQqZz%2BVIaCO8SOeHPLzuVnq2v9lVKLt1Lv65QZ5TepH9%2F8BJ4Zh3ty%2FgRrzbcqb5O6MN1ULJ3MD7HRiwYowe2z1aN%2Bhhu1g4egj%2Bo5Aly7K8IzpYYqmIMzNSKPEY5kX8GY9r2tAww5g2aILS6QDjzKPtL%2FptnlmciTZhI%2B1Fd4ItxF%2F5Re2bVgiaIEvI0BAwZUZQLTeb8aJP2onudqzUm4%2BrXod5PgM544bqDBO2XQoHsvZZpiOUUyZeo%2FRWKx0vcbuy47un%2BeXW2EwDow8Y48zFsC3vGj%2FPySS5mRwANgH7AT34I%2FTZbuMs%2B2ZA%2Bn8OeS%2BwGTgCsNzl9ROQI6XJ8PYZkIN48T%2BgV%2Bpz9JWWvjnmS4AVEzmVw%2BM7wCsx9nMmFgNBaC2MWoCO%2FHPdRVaa8NWOeKrZB%2BhEm9DHki0GwhCDPwZ8BWSiLyBzrXIn9SS5A3kqWV7oBr0xAHe8RuAxwENAVMTHQQlQBLwG6oFO%2BgNKbiMFk7xqvQAAAABJRU5ErkJggg%3D%3D);
+}
+.mui-bar .mui-icon-cart:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 32px;
+    min-width: 32px;
+    font-size: 20px;
+    display: block;
+    content: attr(number);
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(240, 88, 48);
+    text-align: center;
+    transform: scale(0.5);
 }
 .mui-bar .mui-title {
     line-height: 50px;
@@ -192,7 +241,6 @@
 }
 
 .edit-dialog {
-    color: rgb(69, 80, 84);
     background: #fafafa !important;
     width: 100%;
     height: 100%;
@@ -201,19 +249,20 @@
     top: 0;
     z-index: 99;
     overflow: auto;
+    padding-bottom: 60px;
 }
 .edit-dialog .btn-close {
-    position: absolute;
-    top: 13px;
-    right: 25px;
+    position: fixed;
+    top: 8px;
+    right: 8px;
     z-index: 2;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    line-height: 40px;
     color: #fff;
-    font-size: 48px;
-    display: inline-table;
+    font-size: 40px;
+    font-weight: 100;
 }
 
 .edit-dialog-info {
@@ -241,6 +290,7 @@
     left: 0;
     top: 0;
     width: 32px;
+    color: rgb(81, 104, 128);
 }
 .edit-dialog-cont .tit {
     position: absolute;
@@ -258,6 +308,8 @@
     margin-right: 10px;
     margin-bottom: 10px;
     border-color: rgb(81, 104, 128);
+    color: rgb(81, 104, 128);
+    border-radius: 5px;
 }
 .edit-dialog-cont .cont .btn-icon {
     padding: 2px 15px 2px 3px;
@@ -276,6 +328,8 @@
 }
 .edit-dialog-cont .mui-numbox .mui-btn {
     width: 44px;
+    padding-bottom: 8px;
+    line-height: 0;
     background-color: #fff;
 }
 .edit-dialog-cont .mui-numbox .mui-numbox-input {
@@ -283,10 +337,13 @@
     border-left: 1px solid rgb(238, 237, 237) !important;
     border-right: 1px solid rgb(238, 237, 237) !important;
     background-color: #fafafa;
+    font-size: 20px;
 }
 .edit-dialog-cont .mui-numbox .mui-numbox-btn-minus {
     border-right: 1px solid rgb(238, 237, 237) !important;
+    font-size: 36px;
 }
 .edit-dialog-cont .mui-numbox .mui-numbox-btn-plus {
     border-left: 1px solid rgb(238, 237, 237) !important;
+    font-size: 36px;
 }
