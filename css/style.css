@@ -28,3 +28,39 @@
 .mui-bar-nav ~ .mui-content {
     padding-top: 50px;
 }
+
+.mui-table-view.mui-grid-view.list-2 {
+    padding: 0 10px 20px;
+}
+.mui-table-view.mui-grid-view.list-2 .mui-table-view-cell {
+    padding: 20px 5px 0;
+    margin-right: 0;
+}
+.mui-table-view.mui-grid-view.list-2 .mui-table-view-cell .mui-media-body {
+    margin-top: 10px;
+    height: 44px;
+}
+.mui-table-view.mui-grid-view.list-2 .mui-table-view-cell .mui-media-object {
+    background-color: #f2f2f2;
+    vertical-align: middle;
+}
+
+.mui-table-view.mui-grid-view.list-2 a {
+    margin: 0!important;
+    padding: 0;
+}
+
+.list-2-tit {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(69, 80, 84);
+
+}
+
+.list-2-price {
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgb(240, 88, 48);
+}
