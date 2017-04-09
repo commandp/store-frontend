@@ -1,9 +1,19 @@
 .pulling{
-    height: 420px;
+    height: 100%;
     background-color: rgb(69, 80, 84);
     color: rgba(255,255, 255, 0.50);
     text-align: center;
     margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+#wrapper {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
 }
 .pull-img {
     width: 24px;
@@ -17,23 +27,23 @@
 .product-detail {
     background-color: #f1f1f1;
 }
-.basic-info{
+.product-detail .basic-info{
      text-align: center;
      background-color: #fff;
      width: 100%;
 }
-.desc {
+.product-detail .desc {
     font-size: 17px;
     padding: 14px 0;
 }
-.price {
+.product-detail .price {
     font-size: 20px;
     padding: 14px 0;
     border-top: 1px solid #e6e6e6;
     color: rgb(240, 88, 48)
 }
 
-.desc-info {
+.product-detail .desc-info {
     background-color: #fff;
     width: 100%;
     /*height: 700px;*/
@@ -41,6 +51,10 @@
     color: rgb(81, 104, 128);
     margin-top: 10px;
 }
+.product-detail .mui-slider-progress-bar {
+    -webkit-transform: translateY(1px);
+}
+
 .mui-slider-item.mui-control-content.item-desc-1 {
     height: 500px;
 }
@@ -60,8 +74,7 @@
     vertical-align: sub;
 }
 .icon-contain {
-    height: 40px;
-    line-height: 40px;
+    line-height: 38px;
     width: 40px;
     background-color: #fff;
     display: inline-block;
@@ -78,8 +91,8 @@
     left: 0;
     right: 0;
     width: 100%;
-    height: 50px;
-    z-index: 100;
+    padding: 0;
+    z-index: 2;
     line-height: 50px;
     text-align: center;
 }
@@ -96,7 +109,7 @@
     padding-top: 10px;
 }
 .may-like {
-     margin-bottom: 150px;
+     margin-bottom: 70px;
 }
 .like-text{
     margin: 15px 0 10px 15px;
@@ -171,7 +184,7 @@
 
 .edit-dialog {
     color: rgb(69, 80, 84);
-    background: rgb(238, 237, 237) !important;
+    background: #fafafa !important;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -225,24 +238,46 @@
     left: 15px;
     top: 15px;
     width: 36px;
-    line-height: 48px;
+    line-height: 44px;
 }
 .edit-dialog-cont .cont {
     margin-left: 42px;
 }
 .edit-dialog-cont .cont .btn-chek {
-    padding: 12px 15px;
+    padding: 10px 15px;
     font-size: 16px;
     margin-right: 10px;
     margin-bottom: 10px;
     border-color: rgb(81, 104, 128);
 }
 .edit-dialog-cont .cont .btn-icon {
-    padding: 3px 15px 3px 3px;
+    padding: 2px 15px 2px 3px;
 }
 
 .edit-dialog-cont .cont .btn-chek.active {
     background-color: rgb(79, 189, 146);
     color: #fff;
     border-color: rgb(79, 189, 146);
+}
+
+.edit-dialog-cont .mui-numbox {
+    height: 44px;
+    width: 144px;
+    border-color: rgb(238, 237, 237);
+}
+.edit-dialog-cont .mui-numbox .mui-btn {
+    width: 44px;
+    background-color: #fff;
+}
+.edit-dialog-cont .mui-numbox .mui-numbox-input {
+    width: 60px !important;
+    border-left: 1px solid rgb(238, 237, 237) !important;
+    border-right: 1px solid rgb(238, 237, 237) !important;
+    background-color: #fafafa;
+}
+.edit-dialog-cont .mui-numbox .mui-numbox-btn-minus {
+    border-right: 1px solid rgb(238, 237, 237) !important;
+}
+.edit-dialog-cont .mui-numbox .mui-numbox-btn-plus {
+    border-left: 1px solid rgb(238, 237, 237) !important;
 }

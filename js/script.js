@@ -25,7 +25,7 @@ mui('#wrapper').on('touchstart', '.mui-content', function (e) {
     }
 }).on('touchend', '.mui-content', function () {
     if (this.diff > 0) {
-        this.wrapper.style['webkitTransform'] = 'translateY(' + 0 + 'px)';
+        this.wrapper.style['webkitTransform'] = 'none';
         this.wrapper.style['webkitTransition'] = '0.3s';
     }
     this.startClientY = 0;
