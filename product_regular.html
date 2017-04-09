@@ -153,13 +153,13 @@
                 </li>
             </ul>
             </div>
-            <a href="#edit-dialog" class="go-buy">加入购物车</a>
+            <button id="btn-go-buy" class="go-buy">加入购物车</button>
         </div>
     </div>
     <!-- 编辑对话框 -->
-    <div id="edit-dialog" style="height: 100%;" class="edit-dialog mui-popover mui-popover-action mui-popover-bottom">
+    <div id="edit-dialog" style="display: none;" class="edit-dialog">
         <!-- close -->
-        <div class="btn-close" onclick="mui('#edit-dialog').popover('toggle');">+</div>
+        <div class="btn-close">+</div>
         <!-- slider -->
         <div id="edit-dialog-slider" class="mui-slider">
             <div class="mui-slider-group mui-slider-loop">
