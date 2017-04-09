@@ -39,6 +39,7 @@
     right: 0;
     width: 100%;
     height: 50px;
+    z-index: 100;
 }
 .deac-text {
      padding-top: 40px;
@@ -54,15 +55,14 @@
     text-align: center;
     border: 1px solid #e6e6e6;
 }
-.mui-slider{
-    height: 192px;
-}
+
 .active-text {
     width: 49%;
     color: rgb(79, 189, 146);
     display: inline-block;
     padding: 14px 0;
 }
+
 .tab-text {
     width: 49%;
     display: inline-block;

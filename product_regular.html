@@ -15,15 +15,37 @@
         <a class="icon mui-icon-cart mui-pull-right"></a>
     </header>
     <div class="mui-content">
-        <div class="mui-slider">
-            <div class="mui-slider-group">
-                <div class="mui-slider-item">
-                    <img src="img/header.png" alt="">
-                </div>
-                <div class="mui-slider-item">
-                    <img src="img/banner.png" alt="">
-                </div>
+        <div id="slider" class="mui-slider product">
+        <div class="mui-slider-group mui-slider-loop">
+            <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="./img/header.png">
+                </a>
             </div>
+            <!-- 第一张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="./img/header.png">
+                </a>
+            </div>
+            <!-- 第二张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="./img/header.png">
+                </a>
+            </div>
+            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="./img/header.png">
+                </a>
+            </div>
+        </div>
+        <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+        </div>
         </div>
         <div class="product-detail">
             <div class="basic-info">
@@ -36,16 +58,38 @@
                     <div class="tab-text">商家资讯</div>
                 </div>
                 <div class="deac-detail">
-                    <div class="mui-slider">
-                        <div class="mui-slider-group">
-                            <div class="mui-slider-item">
-                                <img src="img/img1.png" alt="">
-                            </div>
-                            <div class="mui-slider-item">
-                                <img src="img/phone-2.png" alt="">
-                            </div>
+                <div id="slider" class="mui-slider product">
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="./img/img1.png">
+                            </a>
+                        </div>
+                        <!-- 第一张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="./img/img1.png">
+                            </a>
+                        </div>
+                        <!-- 第二张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="./img/img1.png">
+                            </a>
+                        </div>
+                        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="./img/img1.png">
+                            </a>
                         </div>
                     </div>
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <div class="mui-indicator"></div>
+                    </div>
+                </div>
                     <div class=""> 
                         發揮創意，打造屬於你或你們的馬克杯。 </br>
                         想要擁有自己獨有設計的杯款，或與另一半、家人、朋友們成對的紀念對杯，</br>
@@ -61,6 +105,24 @@
             </div>
             <div class="may-like">
                 <div class="like-text">猜你喜欢</div>
+                <ul class="mui-table-view mui-grid-view list-2">
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#">
+                        <img class="mui-media-object" src="./img/list-1.png">
+                        <div class="mui-media-body">
+                            <div class="list-2-tit">手機磨砂硬殼</div>
+                            <div class="list-2-price">￥79-100</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#">
+                        <img class="mui-media-object" src="./img/list-2.png">
+                        <div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
+                        <div class="list-2-price">￥79-100</div>
+                    </a>
+                </li>
+            </ul>
             </div>
             <button class="go-buy">加入购物车</button>
         </div>
