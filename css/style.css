@@ -1,3 +1,73 @@
+
+.product-detail {
+    background-color: #f1f1f1;
+}
+.basic-info{
+     text-align: center;
+     background-color: #fff;
+     width: 100%;
+}
+.desc {
+    font-size: 17px;
+    padding: 14px 0;
+}
+.price {
+    font-size: 20px;
+    padding: 14px 0;
+    border-top: 1px solid #e6e6e6;
+    color: rgb(240, 88, 48)
+}
+
+.desc-info {
+    background-color: #fff;
+    width: 100%;
+    font-size: 16px;
+    color: rgb(81, 104, 128);
+    margin-top: 10px;
+}
+.deac-detail {
+    padding: 15px;
+    line-height: 26px;
+}
+.go-buy {
+    background-color: rgb(240, 88, 48);
+    color: #fff;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+}
+.deac-text {
+     padding-top: 40px;
+}
+.may-like {
+     margin-bottom: 150px;
+}
+.like-text{
+    margin: 15px 0 10px 15px;
+}
+.tab-header {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+}
+.mui-slider{
+    height: 192px;
+}
+.active-text {
+    width: 49%;
+    color: rgb(79, 189, 146);
+    display: inline-block;
+    padding: 14px 0;
+}
+.tab-text {
+    width: 49%;
+    display: inline-block;
+    padding: 14px 0;
+}
 .mui-bar {
     height: 50px;
     line-height: 50px;
