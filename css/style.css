@@ -240,6 +240,8 @@ body {
 }
 .mui-bar .mui-title {
     line-height: 50px;
+    left: 100px;
+    right: 100px;
 }
 
 .mui-bar .mui-title img {
@@ -301,7 +303,7 @@ body {
 .edit-dialog .btn-close {
     position: absolute;
     top: 8px;
-    right: 10px;
+    /*right: 10px;*/
     z-index: 2;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -310,6 +312,10 @@ body {
     color: #fff;
     font-size: 40px;
     font-weight: 100;
+
+    margin-left: 100%;
+    -webkit-transform: translateX(-50px) rotate(45deg);
+    transform: translateX(-50px) rotate(45deg);
 }
 
 .edit-dialog-info {
