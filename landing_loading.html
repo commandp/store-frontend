@@ -2,14 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>landing_loading</title>
     <link rel="stylesheet" href="css/mui.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    是公司打工
+    <header id="header" class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-bars mui-pull-left"></a>
+        <h1 class="mui-title">折叠面板</h1>
+        <a class="mui-icon mui-icon-bars mui-pull-right"></a>
+    </header>
+    <div class="mui-content">
+        <div class="mui-numbox">
+            <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+            <input class="mui-numbox-input" type="number" />
+            <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+        </div>
+    </div>
+    
     <script src="js/mui.js"></script>
     <script src="js/script.js"></script>
 </body>
