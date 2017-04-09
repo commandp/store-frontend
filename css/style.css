@@ -3,6 +3,9 @@ body {
     line-height: 1.5;
     color: rgb(69, 80, 84);
 }
+html, body {
+    height: 100%;
+}
 .max-width {
     max-width: 414px;
     margin: 0 auto;
@@ -38,6 +41,7 @@ body {
     background-size: 18px;
     padding-left: 40px;
     line-height: 28px;
+    cursor: pointer;
 }
 .menu-list .mui-table-view-cell:after {
     left: 0;
@@ -215,6 +219,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
+    cursor: pointer;
 }
 .mui-bar .mui-icon-item {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAASCAYAAACw50UTAAAAAXNSR0IArs4c6QAAACxJREFUOBFjZGBg+A/ENAFMNDF11NDRECA5BBiBOkbTOcnBNqphiIXA0E3nAPTKAwfUKYGPAAAAAElFTkSuQmCC);
@@ -316,6 +321,7 @@ body {
     margin-left: 100%;
     -webkit-transform: translateX(-50px) rotate(45deg);
     transform: translateX(-50px) rotate(45deg);
+    cursor: pointer;
 }
 
 .edit-dialog-info {
