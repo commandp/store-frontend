@@ -5014,13 +5014,13 @@ body > .mui-progressbar
     margin: 2px 8px;
 }
 
-@font-face {
+/*@font-face {
     font-family: Muiicons;
     font-weight: normal;
     font-style: normal;
 
     src: url('../fonts/mui.ttf') format('truetype');
-}
+}*/
 .mui-icon
 {
     font-family: Muiicons;

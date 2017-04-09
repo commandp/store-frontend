@@ -1,14 +1,14 @@
-mui.init({
-  gestureConfig:{
-   tap: true, //默认为true
-   doubletap: false, //默认为false
-   longtap: false, //默认为false
-   swipe: true, //默认为true
-   drag: true, //默认为true
-   hold: true,//默认为false，不监听
-   release: true//默认为false，不监听
-  }
-});
+/*mui.init({
+    gestureConfig: {
+        tap: true, //默认为true
+        doubletap: false, //默认为false
+        longtap: false, //默认为false
+        swipe: true, //默认为true
+        drag: true, //默认为true
+        hold: false,//默认为false，不监听
+        release: false//默认为false，不监听
+    }
+});*/
 
 // 菜单
 mui('body').on('tap', '.mui-icon-item, #menu-list', function () {
@@ -84,4 +84,9 @@ mui('#edit-dialog').on('change', 'input[type=radio]', function () {
                 <div class="mui-indicator"></div>\
             </div>';
     mui('#edit-dialog-slider').slider();
-})
+});
+if (!("ontouchend" in document)) { // 兼容PC
+    mui('#edit-dialog').on('click', '.btn-chek', function () {
+        this.previousElementSibling.click(); 
+    });
+}

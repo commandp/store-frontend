@@ -383,9 +383,8 @@ body {
 }
 .edit-dialog-cont .mui-numbox .mui-btn {
     width: 44px;
-    padding-bottom: 8px;
-    line-height: 0;
     background-color: #fff;
+    font-size: 24px;
 }
 .edit-dialog-cont .mui-numbox .mui-numbox-input {
     width: 60px !important;
@@ -396,9 +395,7 @@ body {
 }
 .edit-dialog-cont .mui-numbox .mui-numbox-btn-minus {
     border-right: 1px solid rgb(238, 237, 237) !important;
-    font-size: 36px;
 }
 .edit-dialog-cont .mui-numbox .mui-numbox-btn-plus {
     border-left: 1px solid rgb(238, 237, 237) !important;
-    font-size: 36px;
 }
