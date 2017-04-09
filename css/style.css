@@ -2,6 +2,29 @@
     height: 50px;
     line-height: 50px;
 }
-.mui-bar .mui-icon {
-    
+.mui-bar .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+.mui-bar .mui-icon-item {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAASCAYAAACw50UTAAAAAXNSR0IArs4c6QAAACxJREFUOBFjZGBg+A/ENAFMNDF11NDRECA5BBiBOkbTOcnBNqphiIXA0E3nAPTKAwfUKYGPAAAAAElFTkSuQmCC);
+}
+.mui-bar .mui-icon-cart {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA0CAYAAADfRPtlAAAAAXNSR0IArs4c6QAABHpJREFUaAXtWluITlEUNpghw8gtjOQ2uYdcZwwpSaHkhRcpDx6kkAdv8iBSUh48IA%2BTF5TiiTRkBrklEyFmXAYxLpkx7mZG%2BL7f2Vr%2FmnPm3%2Bfy%2F%2F%2F5Nau%2B2Wvts9baa5299j77nH%2Fyuvyl3mhKgDxH1k0zOup1Z67IwxFoE%2FA7BY7mSkI6zg0pEpOJz9TGcZe7IsAbPoJc6EM3Fqpmzc1DNJwdI8vgdkLo5XScRbtEXvwf%2BEokYcr0C%2Fj8XEqKJZqKqoRCIfhZQo4961aSOuhSdFwTnefB3xZy3NhWBHQFOGMbWHcofgJMmeZKu802QeqdzsEEGxm4zRqknlyHlHOBEsuP5WdDOsF7MFpkY5hBHSZUB%2FRxxqzxMzZn%2BgNg1l8beO6ocaJJCMbEx3YHg7Mt0V%2FQvUQDhzjzs40Qk3auioM7qXWC1NVlqh1SJ5sk4%2BGEXPcbzFQYyBKwfs74HSigPtefie9uEB9cxO%2BFE75i2RwUgozl12agiItJHjQObNcg9WlYTcahfmgnGCHLrSxPhnLVxOMnQdpUGUOnLVdytkQdx78E%2FQY0EQamztlW%2BHWQJv3LIq63Ycd4I5zVhnUWgX0BfHwXMZ2SPv2WKG2rhYOx4LnAs0nTMXhPEUBSeQZJUK9DvcDFWBlh9fiJB7wZOYoEFxhnWWplgq2I4VYUcXAhc5MhfB1qoxhc%2BWhw4mAsSeVJvSAzSDvpiCccPhOzQaMw6FAxsIwr0R1FgvSRrTKV5cmEktYfO2zfB6krSd%2BpNfJiBvlVaiwdl7psL%2FaAagtg1mEc2idu4QctUSYXt7eJpAe8W7J%2B%2B%2FijzQMgDrPHo1qRWwJhX3fy4ZTfTQe5Oc9AH2%2FuK%2BAmQL6TOu9Art2BsGvQ5MufwJcBZcBgIOjzFaYpiefNBuAiUAlQTiuth3f5rSaTu%2BozjL0indnx404mE%2FIaa2s6ktzikRy%2FSboFwn6%2BedvCzQf73PyzbzkQGfEtXv%2Bkdhx9U4ACgN9uDgMySJ5%2BuD5taAaUpO1PyLuA0QCPiXOAC4DUeQqZz%2BVIaCO8SOeHPLzuVnq2v9lVKLt1Lv65QZ5TepH9%2F8BJ4Zh3ty%2FgRrzbcqb5O6MN1ULJ3MD7HRiwYowe2z1aN%2Bhhu1g4egj%2Bo5Aly7K8IzpYYqmIMzNSKPEY5kX8GY9r2tAww5g2aILS6QDjzKPtL%2FptnlmciTZhI%2B1Fd4ItxF%2F5Re2bVgiaIEvI0BAwZUZQLTeb8aJP2onudqzUm4%2BrXod5PgM544bqDBO2XQoHsvZZpiOUUyZeo%2FRWKx0vcbuy47un%2BeXW2EwDow8Y48zFsC3vGj%2FPySS5mRwANgH7AT34I%2FTZbuMs%2B2ZA%2Bn8OeS%2BwGTgCsNzl9ROQI6XJ8PYZkIN48T%2BgV%2Bpz9JWWvjnmS4AVEzmVw%2BM7wCsx9nMmFgNBaC2MWoCO%2FHPdRVaa8NWOeKrZB%2BhEm9DHki0GwhCDPwZ8BWSiLyBzrXIn9SS5A3kqWV7oBr0xAHe8RuAxwENAVMTHQQlQBLwG6oFO%2BgNKbiMFk7xqvQAAAABJRU5ErkJggg%3D%3D);
+}
+.mui-bar .mui-title {
+    line-height: 50px;
+}
+
+.mui-bar .mui-title img {
+    height: 34px;
+    vertical-align: middle;
+}
+
+.mui-bar-nav ~ .mui-content {
+    padding-top: 50px;
 }
