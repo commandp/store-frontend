@@ -441,3 +441,30 @@ html, body {
 .edit-dialog-cont .mui-numbox .mui-numbox-btn-plus {
     border-left: 1px solid rgb(238, 237, 237) !important;
 }
+
+.edit-dialog .mui-slider .mui-slider-item {
+    width: 50%;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+.edit-dialog .mui-slider:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(69, 80, 84, 0.6);
+    z-index: 1;
+}
+.edit-dialog .mui-slider:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(69, 80, 84, 0.6);
+    z-index: 1;
+}
